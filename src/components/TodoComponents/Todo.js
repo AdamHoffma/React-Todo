@@ -1,10 +1,11 @@
 import React from 'react'
 
-addTask = taskName => {
-    const newTask = {
-        task: taskName,
-        id: Date.now(),
-        completed: false
-    }
-    list: [...this.state.list, newTask]
+const Task = props => {
+    return (
+        <div className="newtask">
+            <h1>{props.task.name}</h1>
+        </div>
+    )
 }
+
+export default Task

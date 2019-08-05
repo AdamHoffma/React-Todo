@@ -15,8 +15,9 @@ class ToDoForm extends React.Component {
     }
     submitTask = e => {
         e.preventDefault()
-        this.props.addItem(this.state.task)
+        this.props.addTask(this.state.task)
     }
+    
 
     render() {
         return (
@@ -28,6 +29,7 @@ class ToDoForm extends React.Component {
                     onChange={this.handleChanges}
                     />
                     <button>Add Task</button>
+                    <button>Clear Completed</button>
             </form>
         )
     }
